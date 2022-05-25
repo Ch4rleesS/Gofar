@@ -2,36 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-famil: 'Inter', sans-serif;
+body {
+  font-famil: "Inter", sans-serif;
 }
-
 
 .navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-80;
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
+  @apply fixed z-[9999] bg-white bg-opacity-80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.hamburger-line{
-    @apply w-[30px] h-[2px] my-2 block bg-dark 
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-dark;
 }
 
 .hamburger-active > span:nth-child(1) {
-    @apply rotate-45;
-
+  @apply rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
-    @apply scale-0;
-
+  @apply scale-0;
 }
 
 .hamburger-active > span:nth-child(3) {
-    @apply -rotate-45;
-    
+  @apply -rotate-45;
 }
 
 #dark-toggle:checked ~ label div.toggle-circle {
-    @apply translate-x-3;
+  @apply translate-x-3;
+}
+
+.warnawarni {
+  text-align: center;
+
+  background: linear-gradient(
+    to right,
+    #d000ff 20%,
+    #00ffdf 40%,
+    #008cff 60%,
+    #5cff00 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 25s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
 }

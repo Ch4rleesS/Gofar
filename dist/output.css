@@ -949,34 +949,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-\[0\2c 75rem\] {
   font-size: 0,75rem;
 }
 
-.text-\[0\2c 25rem\] {
-  font-size: 0,25rem;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
-}
-
 .text-\[10px\] {
   font-size: 10px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
 }
 
 .font-bold {
@@ -1033,11 +1020,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
-}
-
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
@@ -1089,8 +1071,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body{
-  font-famil: 'Inter', sans-serif;
+body {
+  font-famil: "Inter", sans-serif;
 }
 
 .navbar-fixed {
@@ -1132,6 +1114,35 @@ body{
 #dark-toggle:checked ~ label div.toggle-circle {
   --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.warnawarni {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #d000ff 20%,
+    #00ffdf 40%,
+    #008cff 60%,
+    #5cff00 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 25s linear infinite;
+          animation: shine 25s linear infinite;
+  @-webkit-keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
 }
 
 @-webkit-keyframes pulse {
