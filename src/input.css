@@ -32,34 +32,64 @@ body {
   @apply translate-x-3;
 }
 
-.warnawarni {
-  text-align: center;
-
-  background: linear-gradient(
-    to right,
-    #d000ff 20%,
-    #00ffdf 40%,
-    #008cff 60%,
-    #5cff00 80%
-  );
-  background-size: 200% auto;
-
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: shine 25s linear infinite;
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
-}
-
 .crop {
   width: 720px;
   height: 405px;
   object-fit: fill;
+}
+
+.anjass {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.anjass2 {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #8d00ff 0%,
+    #ba00ff 29%,
+    #f200ff 67%,
+    #ff0090 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
