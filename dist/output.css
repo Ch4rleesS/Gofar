@@ -1145,6 +1145,13 @@ body {
   }
 }
 
+.crop {
+  width: 720px;
+  height: 405px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 @-webkit-keyframes pulse {
   50% {
     opacity: .5;

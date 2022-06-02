@@ -57,3 +57,9 @@ body {
     }
   }
 }
+
+.crop {
+  width: 720px;
+  height: 405px;
+  object-fit: fill;
+}
